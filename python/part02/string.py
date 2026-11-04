@@ -41,9 +41,43 @@ second="patel"
 
 
    # another method to revers the string
-words="Python"
-result=""
-for ch in words:
-    result=ch+ result
-    # print(result)
-print(result)    
+# words="Python"
+# result=""
+# for ch in words:
+#     result=ch+ result
+       # result= result + ch
+#     # print(result)
+# print(result)    
+
+
+# a="akash patel"
+# b=a.split("\n")
+# b=a.split()
+# print(b)
+
+
+# quetion-------
+ 
+# text="AI"
+# result=""
+# for i in range(4):
+#     result+=text
+# print(len(result))    
+
+#  question
+
+# text = "Computer"
+# count=0
+# for ch in text:
+#     if ch < "m":
+#         count+=1
+# print(count)        
+
+  # ASCAII value
+b=ord("A")
+print(b)
+
+print(ord("a"))
+print(ord("$"))
+print(chr(128522))
+print(ord('@'))
