@@ -81,3 +81,27 @@ print(ord("a"))
 print(ord("$"))
 print(chr(128522))
 print(ord('@'))
+
+
+# ---------question-> given a string , write a code to convert it to
+# lowercase you can not use lower()
+
+name="AKaSH"
+name1=""
+for i in name:
+    if i<='Z' and i>='A':
+        name1+=chr(32+ ord(i))
+    else:
+        name1+=i    
+print(name1)    
+
+# ---------question-> given a string , write a code to convert it to
+# uppercase you can not use upper()
+name="AKaSH"
+name1=""
+for i in name:
+    if i<='z' and i>='a':
+        name1+=chr(ord(i)-32)
+    else:
+        name1+=i    
+print(name1)

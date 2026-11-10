@@ -66,3 +66,22 @@ days=('Monday','Tuesday','Wednesday','Thusday','Friday','Saturday','Sunday',1,1,
 #     return 2,3
 # a=show()
 # print(a)
+
+
+# ----- question
+
+prices =(100,200,150)
+discount=()
+for p in prices:
+    discount+=(p-20,)
+print(discount) 
+print(sum(discount))
+
+
+# --replicate the tuple
+
+tuple1=(1,2)
+tuple2=(3,4)
+tuple3=tuple1+tuple2
+print(tuple3)
+print(tuple3*3)
