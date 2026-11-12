@@ -108,63 +108,90 @@
 #take names seperate by space and remove  duplicate names  while preserving the first accurance
 
 
-name= 'Rahul Amit Rahul Neha Amit'
-name2=name.split()
-unique=[]
-for i in name2:
-    if i not in unique:
-        unique.append(i)
-print(unique)        
+# name= 'Rahul Amit Rahul Neha Amit'
+# name2=name.split()
+# unique=[]
+# for i in name2:
+#     if i not in unique:
+#         unique.append(i)
+# print(unique)        
 
-# problem 3
-# take s string and count  number of vowel,consonant , digit , space
+# # problem 3
+# # take s string and count  number of vowel,consonant , digit , space
  
-s="Python3 is Fun"
-word=s.lower()
-vowel=0
-cons=0
-digit=0
-space=0
-for i in word:
-    if i in "aeiou":
-        vowel+=1
-    elif i in " ":
-        space+=1
-    elif i >='a' and i<='z':
-        cons+=1
-    else:
-        digit+=1
+# s="Python3 is Fun"
+# word=s.lower()
+# vowel=0
+# cons=0
+# digit=0
+# space=0
+# for i in word:
+#     if i in "aeiou":
+#         vowel+=1
+#     elif i in " ":
+#         space+=1
+#     elif i >='a' and i<='z':
+#         cons+=1
+#     else:
+#         digit+=1
 
-print('vowel=',vowel)
-print('consonant=',cons)               
-print('digit=',digit) 
-print('space=',space) 
+# print('vowel=',vowel)
+# print('consonant=',cons)               
+# print('digit=',digit) 
+# print('space=',space) 
 
 
-# ----------or--------- using built in function
+# # ----------or--------- using built in function
 
-s="Python3 is Fun"
-word=s.lower()
-vowel=0
-cons=0
-digit=0
-space=0
-for i in word:
-    if i in "aeiou":
-        vowel+=1
-    elif i.isalpha():
-        cons+=1
-    elif i.isdigit():
-        digit+=1        
-    elif i in " ":
-        space+=1
+# s="Python3 is Fun"
+# word=s.lower()
+# vowel=0
+# cons=0
+# digit=0
+# space=0
+# for i in word:
+#     if i in "aeiou":
+#         vowel+=1
+#     elif i.isalpha():
+#         cons+=1
+#     elif i.isdigit():
+#         digit+=1        
+#     elif i in " ":
+#         space+=1
     
 
-print('vowel=',vowel)
-print('consonant=',cons)               
-print('digit=',digit) 
-print('space=',space) 
+# print('vowel=',vowel)
+# print('consonant=',cons)               
+# print('digit=',digit) 
+# print('space=',space) 
 
+
+
+class BankAccount:
+    def __init__(self,account_holder ,balance):
+        self.account_holder=account_holder
+        self.balance=balance
+
+    def deposit(self,amount):
+        self.balance+=amount
+
+    def withdraw(self, amount):
+        if amount > self.balance:
+            print("insufficient balance")
+        else:
+            self.balance-=amount    
+
+    def check_balance(self):
+        print("Your available balance is = ",self.balance)
+
+
+b1=BankAccount("vikas",2500)
+print(b1.account_holder)
+print(b1.balance)
+b1.deposit(5000)
+b1.withdraw(500)
+b1.deposit(30000)
+b1.check_balance()
 
 
 
